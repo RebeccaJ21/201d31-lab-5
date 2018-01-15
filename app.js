@@ -85,9 +85,9 @@ function sumArray(testArray){ //eslint-disable-line
   var sumOfArray = 0;
   for (var i = 0; i < testArray.length; i++) {
     sumOfArray = sum(testArray[i], sumOfArray) [0];
-  } 
-  var arrayMessage = testArray + ' was passed in as an array of numbers, and ' + sumOfArray + ' is their sum.';
-  return [sumOfArray, arrayMessage];
+  }
+  var message = testArray + ' was passed in as an array of numbers, and ' + sumOfArray + ' is their sum.';
+  return [sumOfArray, message];
 }
 
 // Here is the test for sumArray(); uncomment it to run it
@@ -112,8 +112,8 @@ function multiplyArray(testArray){ //eslint-disable-line
   for (var i = 0; i < testArray.length; i++) {
     productArray = multiply(testArray[i], productArray) [0];
   }
-  var productArrayMessage = 'The numbers ' + testArray + ' have a product of ' + productArray + '.';
-  return [productArray, productArrayMessage];
+  var message = 'The numbers ' + testArray + ' have a product of ' + productArray + '.';
+  return [productArray, message];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
